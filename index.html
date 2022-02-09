@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script
+      src="https://kit.fontawesome.com/4949bc6bcb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>To-do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="images/chevron-left.png" class="before" />
+        <h1>Monday, <span>February 7th</span></h1>
+        <img src="images/chevron-right.png" class="next" />
+      </div>
+      <hr />
+      <div class="add">
+        <input type="text" id="myInput" />
+        <img src="images/add-button.png" class="add-btn" />
+      </div>
+      <div class="to-do">
+        <ul id="myUL">
+          <li>Team Meeting</li>
+          <li>Drink 2L of Water</li>
+          <li>Go for a walk</li>
+          <li>Monthly touch base with Julia</li>
+        </ul>
+      </div>
+      <footer>
+        <p>You have 4 Tasks to do today!</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
