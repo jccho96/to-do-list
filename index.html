@@ -7,42 +7,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <script
-      src="https://kit.fontawesome.com/4949bc6bcb.js"
-      crossorigin="anonymous"
-    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <title>To-do List</title>
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <img src="images/chevron-left.png" class="before" />
-        <h1>Monday, <span>February 7th</span></h1>
-        <img src="images/chevron-right.png" class="next" />
+      <div class="header-container">
+        <i class="fa-solid fa-chevron-left"></i>
+        <h1 class="today-date">
+          Monday, <span class="month-date">February 7th</span>
+        </h1>
+        <i class="fa-solid fa-chevron-right"></i>
       </div>
       <hr />
       <div class="add">
-        <input type="text" id="myInput" />
-        <img src="images/add-button.png" class="add-btn" />
+        <input
+          type="text"
+          id="myInput"
+          class="todoInput"
+          placeholder="What do you need to do today?"
+        />
+        <i id="addButton" class="fa-solid fa-plus"></i>
       </div>
-      <div class="to-do">
-        <ul id="myUL">
-          <li>Team Meeting</li>
-          <li>Drink 2L of Water</li>
-          <li>Go for a walk</li>
-          <li>Monthly touch base with Julia</li>
-        </ul>
+      <div class="todo-container">
+        <ul class="todo-list"></ul>
       </div>
-      <footer>
+      <div class="summary">
         <p>You have 4 Tasks to do today!</p>
-      </footer>
+      </div>
     </div>
-
+    <script
+      src="https://kit.fontawesome.com/ae92c0f6ba.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

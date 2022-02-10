@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  font-family: "Yuji Boku", serif;
+}
+
+.container {
+  width: 26rem;
+  height: 38rem;
+  border: 1px solid #eee;
+  margin: auto;
+  box-shadow: 2px 4px 8px -7px #000000;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.today-date {
+  font-size: 1.5rem;
+  color: #333030;
+  margin: 0 3rem 0 3rem;
+}
+
+.month-date {
+  font-size: 1.1rem;
+  color: #423e3e;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#myInput {
+  margin-top: 1rem;
+  width: 18rem;
+  padding: 5px 15px;
+  border-radius: 0;
+  border: 1px solid #423e3e;
+  background-color: #fff5f5;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.add i {
+  position: absolute;
+  top: 21px;
+  right: 70px;
+  cursor: pointer;
+  color: rgb(230, 216, 216);
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+  margin: 2rem 4rem;
+  padding: 0;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.5s ease;
+  margin-bottom: 1rem;
+}
+.todo-btn {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f5b8b8;
+  background-color: #fff;
+  margin-right: 1rem;
+}
+
+.delete-btn {
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  color: rgb(230, 216, 216);
+  position: absolute;
+  right: 0;
+}
+
+.fa-xmark {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "f00c";
+}
+
+.checkmark {
+  background-color: #def5d4;
+  border: 0.1rem solid #c7c7c7;
+}
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+/* Footer */
+
+.summary {
+  position: absolute;
+  left: 20%;
+  bottom: 5%;
+  color: rgb(87, 85, 85);
+}
