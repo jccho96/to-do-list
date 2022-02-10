@@ -7,6 +7,7 @@
   width: 26rem;
   height: 38rem;
   border: 1px solid #eee;
+  border-radius: 10px;
   margin: 5% auto;
   box-shadow: 2px 4px 8px -7px #000000;
   position: relative;
@@ -23,7 +24,8 @@
 .today-date {
   font-size: 20px;
   color: #505050;
-  margin: 0 3rem 0 3rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
 }
 
 /* end of header */
