@@ -3,11 +3,48 @@ const addButton = document.getElementById("addButton");
 const todoList = document.querySelector(".todo-list");
 const summary = document.querySelector(".summary");
 const numberOfItems = document.querySelectorAll(".todo-list").length;
+const todayDate = document.querySelector(".today-date");
 
-console.log(numberOfItems);
-
+//Event Listeners
 addButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
+
+// Today's Date
+let today = new Date();
+
+let day = today.getDay();
+let month = today.getMonth();
+let date = today.getDate();
+let dayArray = new Array(
+  "Sunday, Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+);
+
+let monthArray = new Array(
+  "Januray",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+);
+
+let currentDate = `${dayArray[day]}, ${monthArray[month]} ${date}th`;
+todayDate.innerText = currentDate.toString();
+
+function clearList() {
+  todoList.remove();
+}
 
 function updateCount() {
   const count = todoList.childElementCount;
