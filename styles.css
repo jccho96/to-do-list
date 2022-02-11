@@ -3,6 +3,9 @@
   font-family: "Yuji Boku", serif;
 }
 
+body {
+  background-color: rgb(255, 239, 219);
+}
 .container {
   width: 26rem;
   height: 38rem;
@@ -10,6 +13,7 @@
   border-radius: 10px;
   margin: 5% auto;
   box-shadow: 2px 4px 8px -7px #000000;
+  background-color: #fff;
   position: relative;
 }
 
